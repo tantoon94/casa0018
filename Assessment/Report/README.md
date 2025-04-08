@@ -3,11 +3,17 @@
 Name of author, link to github repo with project work in / link to Edge Impulse projects
 
 ## Introduction
-- an overview of what the project does
-- your inspiration for making the project 
-- examples that it is based on. 
 
-*Tip: probably ~200 words and images are good!*
+This pilot study and research project aims to define a model to differentiate between diverse fabric textures using AI and deep learning. In the fashion and interior design industries, making the right fabric choice is an imperative part of the design process. Accurate fabric classification ensures that designers select materials that meet specific aesthetic and functional requirements. For instance, a fashion designer might need to distinguish between silk and satin to achieve the desired drape and feel of a garment, while an interior designer might choose between velvet and linen for upholstery based on texture and durability.
+
+Much of these industries' complex and repetitive work is already automated, thanks to the diverse implications of AI Automated Visual Inspection System. Automated systems can identify defects and ensure quality control, significantly enhancing efficiency and consistency \ref{fig:defects}. However, there are still areas where automation is needed, specifically where classifying fabrics in large quantities is an integral part of an everyday task. For example, in the e-commerce sector, accurate classification of fabric textures helps in providing detailed product descriptions, which can enhance customer satisfaction and reduce return rates. By leveraging AI and deep learning, this project aims to fill these gaps, providing a robust solution for fabric texture classification.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=0.8\textwidth]{Img/20240922234017_62859.jpg}
+    \caption{An AI Automated Visual Inspection System}
+    \label{fig:defects}
+\end{figure}
 
 ## Research Question
 What is the problem you are trying to solve
