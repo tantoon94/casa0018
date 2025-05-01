@@ -16,7 +16,7 @@ Can a visual AI model differentiate fabric types based on weaving patterns visib
 ## Application Overview
 This project has four stages, as shown in the diagram. Initially, the data was supposed to be collected from three primary sources: First, manually using a mobile camera as the primary sensing device, and second, from diverse image databases online. Third, the images of textiles are scanned using a fingerprint scanner. 
 
-![](C:\Users\Tina\OneDrive - University College London\CASA\CE\CASA0018-DeepLearning\Report\Img\Model diagram.jpg)
+<img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/Images/Model%20diagram.jpg)">
 
 The second stage is the data processing stage, where the data is configured, labeled and normalised. The clean data is then fed into the Edge Impulse, where 80% of the dataset is used to train the model, and the other 20% is set aside for testing the trained model. When the model is trained and tested, a smartphone camera is deployed at inference time to categorise the fabric textile detection. The model will ideally be developed and used as an application for textile recognition, developing the automation process in labelling and storing large quantities of fabric products in commercial and design industries. 
 
