@@ -24,7 +24,7 @@ The original model was supposed to use a fingerprint scanner to scan the textile
 
 
 
-<img src="C:\Users\Tina\OneDrive - University College London\CASA\CE\CASA0018-DeepLearning\Report\Img\photo_2025-04-23_13-09-30.jpg" style="zoom: 40%;" /><img src="C:\Users\Tina\Documents\GitHub\casa0018\Assessment\Projects\Final Project\FingerPrint_Scanner\Screenshot 2025-04-23 131427.png" style="zoom: 32%;" />
+<img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/Images/photo_2025-04-23_13-09-30.jpg" style="zoom: 40%;" /><img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/FingerPrint_Scanner/Screenshot%202025-04-23%20131427.png" style="zoom: 32%;" />
 
 ## Data
 The data is divided into four fabric textile categories: **Cotton**, **Linen**, **Silk**, and **Wool**. However, in the training process, the two categories of Linen and Cotton were merged as there was very little difference, and the model struggled to pick this up with the limited data collected. The model is trained with two different data sources: 
