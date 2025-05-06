@@ -50,9 +50,6 @@ For this project, the processing block was fixed on the images as the input data
 
 It was decided to change the DSP from RGB to Grayscale when analysing the fabric texture to optimise the processing time and remove the colour factor from the decisive parameters. This would ensure the fabric is solely categorised by the weaving and texture features, not by colour. However, the patterns of the fabrics still remain an issue, which is deliberately left for the model to decide whether or not to use it as a factor. 
 
-![image-20250414174944919](C:\Users\Tina\AppData\Roaming\Typora\typora-user-images\image-20250414174944919.png)
-
-![image-20250414175031040](C:\Users\Tina\AppData\Roaming\Typora\typora-user-images\image-20250414175031040.png)
 
 ## Experiments
 The experiments were divided into two parts to differentiate between data collected from online resources and data gathered manually using an iPhone camera. Identical parameters were adjusted in each part to achieve comparable results. Besides configuring the learning blocks for each training dataset, the main features altered in each testing trial included the **Neural Network Architecture**, the number of **Epochs**, the number of **neurons**, and the **Learning rate**.
