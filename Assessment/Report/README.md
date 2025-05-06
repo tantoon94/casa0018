@@ -24,7 +24,7 @@ The original model was supposed to use a fingerprint scanner to scan the textile
 
 
 
-<img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/Images/photo_2025-04-23_13-09-30.jpg" width="500" /><img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/FingerPrint_Scanner/Screenshot%202025-04-23%20131427.png" width="500" />
+<img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/Images/Screenshot%202025-05-06%20125946.png" width="500" />
 
 ## Data
 The data is divided into four fabric textile categories: **Cotton**, **Linen**, **Silk**, and **Wool**. However, in the training process, the two categories of Linen and Cotton were merged as there was very little difference, and the model struggled to pick this up with the limited data collected. The model is trained with two different data sources: 
@@ -35,7 +35,7 @@ The data is divided into four fabric textile categories: **Cotton**, **Linen**, 
 
    
 
-   ![image-20250412193542872](C:\Users\Tina\AppData\Roaming\Typora\typora-user-images\image-20250412193542872.png)
+<img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/Images/Screenshot%202025-04-12%20193516.png"/>
 
    
 
@@ -59,39 +59,31 @@ The experiments were divided into two parts to differentiate between data collec
 
 In the first couple of tests with the DSP Block, it was clear that the Grayscale images produced more accurate results than the RGB versions. As the Table below shows, with the same constant features, the accuracy of both validation and test results increases when the color factor is removed. 
 
-![ONLINE_1-3](C:\Users\Tina\OneDrive - University College London\CASA\CE\CASA0018-DeepLearning\Report\IMPULSES\ONLINE_1-3.png)
-
 A total of 12 trial experiments were conducted for this dataset input, with five additional trials implemented for reference. Three experiments were identified as the most successful, yielding the most accurate results. To assess the impact of each parameter on the outcome, all other parameters were kept constant while one specific parameter was varied.
 
-![MOBILE_MIX_1-3](C:\Users\Tina\OneDrive - University College London\CASA\CE\CASA0018-DeepLearning\Report\IMPULSES\MOBILE_MIX_1-3.png)
-
-![MOBILE_1-3](C:\Users\Tina\OneDrive - University College London\CASA\CE\CASA0018-DeepLearning\Report\IMPULSES\MOBILE_1-3.png)
-
-![COMBINED_1-3](C:\Users\Tina\OneDrive - University College London\CASA\CE\CASA0018-DeepLearning\Report\IMPULSES\COMBINED_1-3.png)
+<img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/Images/Screenshot%202025-04-24%20001432.png"/>
 
 To better monitor potential overfitting, the logs of the training and testing datasets were extracted, analysed separately, and processed into a loss graph for both training and validation.
 
-<img src="C:\Users\Tina\AppData\Roaming\Typora\typora-user-images\image-20250414193851732.png" alt="image-20250414193851732" style="zoom:33%;" />
+<img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/Images/Screenshot%202025-04-24%20002952.png " />
 
 ## Results and Observations
-
-![image-20250415120437965](C:\Users\Tina\AppData\Roaming\Typora\typora-user-images\image-20250415120437965.png)
 
 In the first three attempts for the data collected with the mobile, the model's accuracy remained under 70% with different variations of Epochs, number of neurons, and Learning rate. The validation and training loss graphs also showed an intense overfitting for these trials. However, the most problematic part of the experiment was testing data accuracy, which dropped dramatically, even with the validation accuracy relatively increasing. This probably meant that the data had trouble with the new data and had memorised the existing training data. 
 
 
 
-<img src="C:\Users\Tina\OneDrive - University College London\CASA\CE\CASA0018-DeepLearning\Report\Logs\01\Figure_20epoch_16NN_mobile.png" alt="Figure_20epoch_16NN_mobile" style="zoom: 25%;" /><img src="C:\Users\Tina\OneDrive - University College London\CASA\CE\CASA0018-DeepLearning\Report\Logs\01\Loss_100 epoch_mobile.png" alt="Loss_100 epoch_mobile" style="zoom: 29%;" /><img src="C:\Users\Tina\OneDrive - University College London\CASA\CE\CASA0018-DeepLearning\Report\Logs\01\Figure_30epoch_8NN_mobile.png" alt="Figure_30epoch_8NN_mobile" style="zoom: 25%;" />
+<img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/Images/Screenshot%202025-04-24%20002926.png" />
 
 
 
 Looking at the confusion matrix and the data explorer graphs, the model struggles to differentiate between cotton and linen, with linen being 83.3% mistaken for cotton. Even with all the adjusted parameters, the issue persists, which could mean that the data collected is insufficient for the model to determine the differences between the two materials. 
 
-<img src="C:\Users\Tina\OneDrive - University College London\CASA\CE\CASA0018-DeepLearning\Report\Results\Mobile_1-3.png" style="zoom:50%;" />
+<img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/Images/Screenshot%202025-04-23%20234425.png" />
 
 The cotton and linen datasets were merged to resolve this issue, as the model had already associated them with the same features. This choice dramatically improved the model's accuracy. Also, the model generally performed better, specifically on the recognizing silk with the combined datasets of the mobile and online resources. 
 
-<img src="C:\Users\Tina\AppData\Roaming\Typora\typora-user-images\image-20250415172602720.png" alt="image-20250415172602720" style="zoom: 50%;" />
+<img src="https://github.com/tantoon94/casa0018/blob/main/Assessment/Projects/Final%20Project/Images/Report.jpg" />
 
 
 
